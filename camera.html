@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Camera</title>
+</head>
+
+<body>
+
+<!--   <form role="form" method="post" action="http://localhost/mercado_manha/inc_produtos2.php" enctype="multipart/form-data"> -->
+
+  <form role="form" method="post" action="http://aulaswebsenac.000webhostapp.com/inc_produtos2.php" enctype="multipart/form-data">
+    <input type="text" class="form-control" id="descricao" name="descricao">
+    <input type="text" class="form-control" id="marca" name="marca">
+    <input type="text" class="form-control" id="preco" name="preco">
+    <input type="hidden" class="form-control" id="imagem" name="imagem">
+
+    <input type="submit" value="Enviar">
+  </form>
+
+  <video id="video" width="320" height="240"></video>
+  <button id="btHabilitar">Habilitar Câmera</button>
+  <button id="btCapturar">Capturar Foto</button>
+  <button id="btConverter">Converter</button>
+  <canvas id="canvas" width="320" height="240"></canvas>
+  <script src="camera.js"></script>
+
+</body>
+
+</html>
